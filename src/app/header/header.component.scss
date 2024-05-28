@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+header {
+  padding: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 70% 1fr
+}
+
+.container-header-span {
+  display: flex;
+  justify-self: unset;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Roboto', sans-serif;
+
+  span {
+    color: $color-gray-text-primary;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
