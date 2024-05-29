@@ -1,27 +1,40 @@
-# UiCloneDuolingoSchools
+## Stack used
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+<img src="https://skillicons.dev/icons?i=typescript,angular,githubactions,scss,html,css&theme=dark" />
+**CI/CD:** Github Actions
 
-## Development server
+## Authors
+[@fandredev](https://www.linkedin.com/in/devfandre/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Installation:
+## First, clone this repository.
+```bash
+git@github.com:fandredev/angular-18-features.git
+```
 
-## Code scaffolding
+## Install dependencies.
+```bash
+cd angular-18-features && npm install
+```
+ 
+## Run development server
+```bash
+npm run start
+```
+- or using ```launch.json```  file (if you use vscode and ng install global in your machine)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Run tests
+```bash
+npm run test
+```
 
-## Build
+## Feedback
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+If you have any feedback, please let us know via profissionalf.andre@gmail.com
 
-## Running unit tests
+## Referencies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ - [Django documentation](https://docs.djangoproject.com/en/5.0/)
+ - [Python](https://www.python.org/)
+ - [Black formatter](https://black.readthedocs.io/en/stable/the_black_code_style/index.html)
+ - [Alura Training](https://cursos.alura.com.br/formacao-django-rest)
