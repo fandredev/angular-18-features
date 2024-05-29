@@ -9,6 +9,15 @@
     "test": "ng test"
   },
   "private": true,
+  "author": {
+    "email": "profissionalf.andre@gmail.com",
+    "name": "Felipe André",
+    "url": "https://www.linkedin.com/in/devfandre/"
+  },
+  "bugs": {
+    "url": "https://github.com/fandredev/angular-18-features/issues"
+  },
+  "description": "This project was generated with [Angular CLI] to testing angular 18 features",
   "dependencies": {
     "@angular/animations": "^18.0.0",
     "@angular/common": "^18.0.0",
