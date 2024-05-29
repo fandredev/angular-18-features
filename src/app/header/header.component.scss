@@ -3,7 +3,7 @@
 header {
   padding: 1rem 3rem;
   display: grid;
-  grid-template-columns: 70% 1fr
+  grid-template-columns: 70% 1fr;
 }
 
 .container-header-span {
@@ -17,5 +17,8 @@ header {
     color: $color-gray-text-primary;
     font-style: normal;
     font-weight: 500;
+    cursor: pointer;
+    font-family: 'DinRound Light', sans-serif;
+    font-weight: 700;
   }
 }
