@@ -1,7 +1,6 @@
 ## Stack used
 
 <img src="https://skillicons.dev/icons?i=typescript,angular,githubactions,scss,html,css&theme=dark" />
-**CI/CD:** Github Actions
 
 ## Authors
 [@fandredev](https://www.linkedin.com/in/devfandre/)
