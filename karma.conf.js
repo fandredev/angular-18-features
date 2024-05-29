@@ -35,6 +35,14 @@ module.exports = function (config) {
     reporters: ['progress', 'kjhtml'],
     browsers: ['ChromeHeadless'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    check: {
+      global: {
+        statements: 80,
+        branches: 80,
+        functions: 80,
+        lines: 80
+      }
+    }
   });
 };
