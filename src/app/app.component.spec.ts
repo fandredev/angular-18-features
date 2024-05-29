@@ -31,5 +31,6 @@ describe('AppComponent', () => {
     expect(nativeElement.querySelector('app-header')).toBeTruthy();
     expect(nativeElement.querySelector('app-banner')).toBeTruthy();
     expect(nativeElement.querySelector('app-informations')).toBeTruthy();
+    expect(nativeElement.querySelector('app-depositions')).toBeTruthy();
   });
 });

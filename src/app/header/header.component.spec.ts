@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 
-describe('HeaderComponent', () => {
+describe(`${HeaderComponent.name}`, () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
   let nativeElement: HTMLElement;
