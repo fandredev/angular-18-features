@@ -1,0 +1,23 @@
+@import '../../styles/mixins.scss';
+
+.container-informations {
+  padding: 5rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 50px;
+}
+.container-informations-from-right-side {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  height: 500px;
+
+  @include informations-container-style();
+
+}
+.personalized-tasks {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 50px;
+
+  @include informations-container-style('personalized-tasks-container');
+}

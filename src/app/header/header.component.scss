@@ -1,24 +1,22 @@
 @import '../../styles/variables.scss';
 
 header {
-  padding: 1rem 3rem;
+  padding: 1.3rem 3rem;
   display: grid;
-  grid-template-columns: 70% 1fr;
+  grid-template-columns: 65% 1fr;
 }
 
 .container-header-span {
   display: flex;
   justify-self: unset;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-family: 'Roboto', sans-serif;
 
   span {
-    color: $color-gray-text-primary;
+    color:#71797E;
     font-style: normal;
-    font-weight: 500;
     cursor: pointer;
-    font-family: 'DinRound Light', sans-serif;
-    font-weight: 700;
+    font-family: 'DinRound Dark', sans-serif;
   }
 }
