@@ -43,3 +43,23 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
+
+@font-face {
+  font-family: 'DinRound Light';
+  src: url('../public/fonts/DinRound/DINRoundPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DinRound Dark';
+  src: url('../public/fonts/DinRound/DINRoundPro-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DinRound Medium';
+  src: url('../public/fonts/DinRound/DINRoundPro-Medi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
