@@ -27,7 +27,7 @@ describe(`${HeaderComponent.name}`, () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render the two span in header', () => {
+  it('should render the two span in header when component renders', () => {
     const expectedSpansQuantity = 2;
     const spans = nativeElement.querySelectorAll(
       'header span'
@@ -38,7 +38,7 @@ describe(`${HeaderComponent.name}`, () => {
     expect(spans[1].textContent).toBe('DUOLINGO');
   });
 
-  it('should testing the alt property the logo image when pages renders', () => {
+  it('should testing the alt property the logo image when component renders', () => {
     const img = nativeElement.querySelector('header img') as HTMLImageElement;
 
     expect(img.getAttribute('alt')).toBe('Logotipo duolingo');

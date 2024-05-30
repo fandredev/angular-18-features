@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CardComponent } from './card.component';
 import { Faker, pt_BR } from '@faker-js/faker';
 
-describe('CardComponent', () => {
+describe(`${CardComponent.name}`, () => {
   let component: CardComponent;
   let fixture: ComponentFixture<CardComponent>;
   let nativeElement: HTMLElement;

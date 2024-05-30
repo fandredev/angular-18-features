@@ -1,8 +1,16 @@
+@import './variables.scss';
+
+@mixin displayFlex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-flow: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
 @mixin informations-container-style($containerName: '') {
   aside {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    @include displayFlex(column);
     @if $containerName == 'personalized-tasks-container' {
       align-items: initial;
     } @else {
@@ -12,15 +20,15 @@
 
     h3 {
       color: #4b4b4b;
-      font: 700 25px / 34px Roboto, sans-serif;
+      font: 700 25px / 34px $quaternary-font;
       font-size: 36px;
     }
 
     span {
-      color: #777;
+      color: $color-gray-text-primary;
       line-height: 24px;
       margin-top: 24px;
-      font-family: DinRound Medium;
+      font-family: $secondary-font;
     }
   }
 }

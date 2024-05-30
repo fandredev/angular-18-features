@@ -16,7 +16,7 @@ main {
     color: white;
     font-weight: 900;
     line-height: 4rem;
-    font-family: 'DinRound Dark', sans-serif;
+    font-family: $tertiary-font;
     letter-spacing: -2px;
   }
 
@@ -28,9 +28,9 @@ main {
     gap: 13px;
 
     span {
-      color: white;
+      color: $white;
       line-height: 30px;
-      font-family: 'DinRound Medium', sans-serif;
+      font-family: $secondary-font;
     }
 
     button {
@@ -42,7 +42,7 @@ main {
       color: $main-blue;
       font-weight: 900;
       font-size: medium;
-      font-family: 'DinRound Medium', sans-serif;
+      font-family: $secondary-font;
     }
   }
 

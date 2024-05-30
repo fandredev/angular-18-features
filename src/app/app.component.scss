@@ -1,12 +1,11 @@
 @charset 'UTF-8';
 @import '../styles/variables.scss';
+@import '../styles/mixins.scss';
 
 
 .messages-to-teachers-container {
   background-color: $main-blue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayFlex(column);
   flex-flow: column wrap;
   padding: 4rem;
   gap: 1rem;
@@ -15,14 +14,32 @@
     color: white;
     font-size: 3rem;
     font-weight: 900;
-    font-family: 'DinRound Dark', sans-serif;
+    font-family: $tertiary-font;
   }
   > small {
     color: white;
     font-size: 1rem;
-    font-family: 'DinRound Medium', sans-serif;
+    font-family: $secondary-font
   }
   > iframe {
     border-radius: 10px
+  }
+}
+
+footer {
+  border-top: 2px solid #e5e5e5;
+  padding: 2.1875rem 1.5rem;
+
+  ul {
+    @include displayFlex(initial, center, center);
+    li {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+      margin-right: 1.5rem;
+      text-transform: uppercase;
+      font-family: $quaternary-font;
+      color: #b5afa6;
+    }
   }
 }

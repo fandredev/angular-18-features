@@ -1,13 +1,12 @@
 @charset 'UTF-8';
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include displayFlex(column wrap, initial);
   max-width: 370px;
   width: 100%;
-  background: #fff;
+  background: $white;
   border-radius: 24px;
   padding: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -37,7 +36,7 @@
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid $white;
 }
 
 .profile-card .description {
@@ -45,24 +44,24 @@
   align-items: center;
   margin-top: 14px;
   font-size: 16px;
-  font-family: DinRound Medium;
+  font-family: $secondary-font;
   text-align: center;
   line-height: 30px;
   color: #9d9488;
 }
 
 .profile-card .informations-people {
-  display: flex;
-  align-items: center;
   margin-top: 25px;
   display: flex;
-  flex-flow: column wrap;
+
+  @include displayFlex(column wrap, initial);
+
   gap: 15px;
 
 
   > span {
     font-size: 16px;
-    font-family: DinRound Medium;
+    font-family: $secondary-font;
     margin-right: 10px;
 
     &:first-child {
@@ -70,7 +69,7 @@
     }
 
     &:last-child {
-      color: #000;
+      color: $black;
     }
   }
 }
