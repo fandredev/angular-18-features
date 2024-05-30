@@ -4,8 +4,9 @@ import { Faker, pt_BR } from '@faker-js/faker';
 
 export interface DepositionsProps {
   name: string;
-  text: string;
+  description: string;
   image: string;
+  profession: string;
 }
 
 @Injectable({
@@ -22,30 +23,36 @@ export class DepositionsService {
     return [
       {
         name: this.faker.person.fullName(),
-        text: 'Eu amo o Duolingo!',
+        description:
+          'A gente aprende melhor quando o aplicativo parece um jogo. O Duolingo é pura diversão, e conseguimos potencializar isso na sala de aula.',
         image: this.faker.image.urlLoremFlickr({
           width: 200,
           height: 200,
-          category: 'person',
+          category: 'people',
         }),
+        profession: this.faker.person.jobType(),
       },
       {
         name: this.faker.person.fullName(),
-        text: 'O Duolingo é incrível!',
+        description:
+          'Eu amo o Duolingo porque é um jeito fácil e prático dos meus alunos continuarem a praticar espanhol fora da sala de aula.',
         image: this.faker.image.urlLoremFlickr({
           width: 200,
           height: 200,
           category: 'person',
         }),
+        profession: this.faker.person.jobType(),
       },
       {
         name: this.faker.person.fullName(),
-        text: 'Eu adoro o Duolingo!',
+        description:
+          'Eu adoro o Duolingo porque os aspectos de jogo fazem os meus alunos esquecerem que, enquanto se divertem, também aprendem.',
         image: this.faker.image.urlLoremFlickr({
           width: 200,
           height: 200,
           category: 'person',
         }),
+        profession: this.faker.person.jobType(),
       },
     ];
   }
