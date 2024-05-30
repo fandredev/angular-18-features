@@ -1,0 +1,31 @@
+
+@charset 'UTF-8';
+@import '../../styles/variables.scss';
+
+
+section {
+  background-color: $green-duolingo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding: 4rem;
+
+  > div aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  > h2 {
+    font-size: xx-large;
+    font: 700 32px / 42px DinRound Medium, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: lowercase;
+  }
+}

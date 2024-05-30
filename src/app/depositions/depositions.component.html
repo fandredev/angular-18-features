@@ -1,0 +1,11 @@
+<section>
+  <h2>veja os depoimentos das nossas professoras</h2>
+  <div>
+
+    <aside>
+      @for (d of depositions; track d) {
+      <app-card [depositions]="d"></app-card>
+      }
+    </aside>
+  </div>
+</section>

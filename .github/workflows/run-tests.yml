@@ -1,0 +1,32 @@
+name: Running tests
+
+on:
+  schedule:
+    - cron: '0 11 * * 0'
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        on: [ubuntu-latest, windows-latest]
+        version: [18, 20]
+    runs-on: ${{ matrix.on }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.version }}
+
+    - name: Install dependencies
+      run: npm install --force
+
+    - name: Run tests
+      run: npm run test
