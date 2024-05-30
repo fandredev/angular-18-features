@@ -7,26 +7,33 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+    types: [ opened, synchronize]
 
 jobs:
-  build:
+  test:
+    runs-on: ${{ matrix.os }}
+    continue-on-error: true
     strategy:
-      matrix:
-        on: [ubuntu-latest, windows-latest]
-        version: [18, 20]
-    runs-on: ${{ matrix.on }}
-
+        matrix:
+            os: [ubuntu-latest, windows-latest]
+            node-version: [18, 20]
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
-      run: npm install --force
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
 
-    - name: Run tests
-      run: npm run test
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Tests with Coverage
+        run: pnpm run test

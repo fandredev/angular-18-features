@@ -13,18 +13,18 @@ git@github.com:fandredev/angular-18-features.git
 
 ## Install dependencies.
 ```bash
-cd angular-18-features && npm install
+cd angular-18-features && pnpm install
 ```
  
 ## Run development server
 ```bash
-npm run start
+pnpm run start
 ```
 - or using ```launch.json```  file (if you use vscode)
 
 ## Run tests
 ```bash
-npm run test
+pnpm run test
 ```
 
 ## Feedback
