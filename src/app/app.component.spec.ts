@@ -27,10 +27,14 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render components to site', () => {
+  it('should render components to site when page renders', () => {
     expect(nativeElement.querySelector('app-header')).toBeTruthy();
     expect(nativeElement.querySelector('app-banner')).toBeTruthy();
     expect(nativeElement.querySelector('app-informations')).toBeTruthy();
     expect(nativeElement.querySelector('app-depositions')).toBeTruthy();
+  });
+
+  it('should render section to messages to professores vídeo when page renders', () => {
+    expect(nativeElement.querySelector('iframe')).toBeTruthy();
   });
 });
