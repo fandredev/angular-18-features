@@ -5,23 +5,31 @@
 
 <section class="messages-to-teachers-container">
   <h2>mensagem aos professores</h2>
-  <small>Um agradecimento do nosso CEO e cofundador.</small>
+  <small>Um agradecimento do nosso <abbr title="Chief Executive Officer">CEO</abbr> e cofundador.</small>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/E6hadnnW-JE?si=8k8iAPd8g0UYwyuz"
-    title="YouTube video player" frameborder="0"
+    title="Mensagens aos professores" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 
+<section>
+  <div class="take-duolingo-to-classroom-container">
+    <img src="images/phone-with-kids.png" alt="Criança e senhor segundo um tablet no aplicativo da Duolingo">
+
+    <div>
+      <h2>leve o duolingo para a sua sala de aula!</h2>
+      <app-button [backgroundColor]="'#1cb0f6'" [colorText]="'#fff'">COMEÇAR</app-button>
+    </div>
+  </div>
+
+</section>
+
 <footer>
   <ul>
-    <li>Duolingo</li>
-    <li>Sobre</li>
-    <li>Carreiras</li>
-    <li>Aplicativos</li>
-    <li>Ajuda</li>
-    <li>Termos de uso</li>
-    <li>Privacidade</li>
-    <li>Facebook</li>
-    <li>Twitter</li>
+    @for (links of footerLinks; track links) {
+    <li>
+      <a href="{{ links.url }}" target="_blank">{{ links.title }}</a>
+    </li>
+    }
   </ul>
 </footer>

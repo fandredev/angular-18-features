@@ -1,28 +1,60 @@
 @charset 'UTF-8';
-@import '../styles/variables.scss';
-@import '../styles/mixins.scss';
-
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 .messages-to-teachers-container {
   background-color: $main-blue;
-  @include displayFlex(column);
-  flex-flow: column wrap;
-  padding: 4rem;
+  @include displayFlex(column wrap);
+  padding: 2rem;
   gap: 1rem;
 
   > h2 {
-    color: white;
+    color: $white;
     font-size: 3rem;
     font-weight: 900;
     font-family: $tertiary-font;
   }
   > small {
-    color: white;
+    color: $white;
     font-size: 1rem;
-    font-family: $secondary-font
+    font-family: $secondary-font;
   }
   > iframe {
-    border-radius: 10px
+    border-radius: 10px;
+  }
+}
+
+section {
+  @include displayFlex(column wrap);
+
+  > div.take-duolingo-to-classroom-container {
+    max-width: 1140px;
+    padding: 80px 0;
+    width: 100%;
+    @include displayFlex(row-reverse);
+
+    > img {
+      height: 231px;
+      width: 257px;
+    }
+
+    > div {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      height: 231px;
+      gap: 16px;
+
+      > h2 {
+        font-size: 68px;
+        letter-spacing: -0.02em;
+        color: #4b4b4b;
+        line-height: 85%;
+        max-width: 463px;
+        text-align: start;
+        font-family: "DinRound Medium", Courier, monospace;
+      }
+    }
   }
 }
 
@@ -32,14 +64,15 @@ footer {
 
   ul {
     @include displayFlex(initial, center, center);
-    li {
+    li a {
       font-size: 14px;
       font-weight: 700;
       line-height: 18px;
       margin-right: 1.5rem;
       text-transform: uppercase;
       font-family: $quaternary-font;
-      color: #b5afa6;
+      color: #4b4b4b;
+      text-decoration: none;
     }
   }
 }

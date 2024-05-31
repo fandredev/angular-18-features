@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+@import "../../styles/variables.scss";
+
+button {
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: $white;
+  color: $main-blue;
+  font-weight: 900;
+  font-size: medium;
+  font-family: $secondary-font;
+  cursor: pointer;
+  &:hover {
+    background-color: $main-blue !important;
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(1.98px);
+  }
+}
