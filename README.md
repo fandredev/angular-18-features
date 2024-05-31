@@ -8,7 +8,7 @@
 # Installation:
 ## First, clone this repository.
 ```bash
-git@github.com:fandredev/angular-18-features.git
+git clone git@github.com:fandredev/angular-18-features.git
 ```
 
 ## Install dependencies.
@@ -34,3 +34,6 @@ If you have any feedback, please let us know via profissionalf.andre@gmail.com
 ## Referencies
 
  - [Angular v18](https://angular.dev/)
+ - [Conventional Commits](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)
+ - [pnpm](https://pnpm.io/pt/)
+ - [karma](https://karma-runner.github.io/latest/index.html)

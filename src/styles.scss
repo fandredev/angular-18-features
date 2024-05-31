@@ -44,6 +44,10 @@ q:before, q:after {
 	content: none;
 }
 
+abbr {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 @font-face {
   font-family: 'DinRound Light';

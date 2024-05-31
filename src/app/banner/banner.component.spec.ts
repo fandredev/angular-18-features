@@ -64,4 +64,9 @@ describe(`${BannerComponent.name}`, () => {
     expect(searchByImage).toBeTruthy();
     expect(altAttribute).toBe('Personagens do Duolingo numa sala de aula');
   });
+
+  it('should render correct app-button when page loads', () => {
+    const searchByButton = nativeElement.querySelector('app-button');
+    expect(searchByButton).toBeTruthy();
+  });
 });

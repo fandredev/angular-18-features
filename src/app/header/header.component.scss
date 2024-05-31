@@ -16,5 +16,9 @@ header {
     font-style: normal;
     cursor: pointer;
     font-family: $tertiary-font;
+
+    &:hover {
+      border-bottom: 1px solid $main-blue;
+    }
   }
 }

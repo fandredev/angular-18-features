@@ -37,8 +37,4 @@ describe(`${AppComponent.name}`, () => {
   it('should render section to messages to professores vídeo when component renders', () => {
     expect(nativeElement.querySelector('iframe')).toBeTruthy();
   });
-
-  xit('should render footer to site when component renders', () => {
-    expect(nativeElement.querySelector('app-footer')).toBeTruthy();
-  });
 });
