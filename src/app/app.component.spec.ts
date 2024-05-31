@@ -35,6 +35,7 @@ describe(`${AppComponent.name}`, () => {
   });
 
   it('should render section to messages to professores vídeo when component renders', () => {
-    expect(nativeElement.querySelector('iframe')).toBeTruthy();
+    const iframe = nativeElement.querySelector('iframe') as HTMLIFrameElement;
+    expect(iframe).toBeTruthy();
   });
 });

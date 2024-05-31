@@ -54,7 +54,7 @@ describe(`${InformationsComponent.name}`, () => {
         `${containerClass} span`
       ) as HTMLSpanElement;
 
-      expect(subtitle.textContent).toBe(
+      expect(subtitle.textContent?.trim()).toBe(
         'O Duolingo for Schools utiliza o mesmo currículo do Duolingo e você ainda pode filtrar pelos padrões CEFR e ACTFL. Assim você encontra o conteúdo de que precisa para ensinar.'
       );
     });
